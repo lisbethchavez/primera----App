@@ -8,6 +8,7 @@ const LISTA_CURSOS = [
   {id:2, curso: 'Curso de Docker para principiantes'},
   {id:3, curso: 'Construyendo REST API desde cero'},
   {id:4, curso: 'Curso de POO'},
+
 ];
 
 
@@ -36,6 +37,8 @@ function App() {
 
     </div>
   );
+
+  
 }
 
 export default App;

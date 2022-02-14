@@ -9,15 +9,15 @@ function Cursos({cursos, onEliminarCursos}) {
         onEliminarCursos(id);
     }
 
-
-    return (
-        <div>
+    return ( <div>
             <h2>Listado de cursos</h2>
             <hr/>
             <Cursoform />
+            <div id='escribir'>
+                <button onClick={recibir}> Agregar </button>
+            </div>
             <hr/>
-            <ul>
-                {
+            <ul>{
                     cursos.map( item => (
                         <li key={item.id}> {item.id} - {item.curso}
                             <button onClick={ ()=> eliminarCursoHandler(item.id) }>Eliminar curso</button>
@@ -28,7 +28,6 @@ function Cursos({cursos, onEliminarCursos}) {
         </div>
     );
 }
-
 /*
 const Cursos = () => {
     return (
